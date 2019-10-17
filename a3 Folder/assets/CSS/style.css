@@ -1,0 +1,131 @@
+
+body{
+
+background-color: lightblue;
+
+}
+
+#logo{
+
+	width:30vw;
+	height: 10vw;
+	padding:2vw;
+
+}
+
+#nav{
+	background-color: white;
+	width: 100vw;
+	height: 4vw;
+	text-align: center;
+	color: #AB5A1B;
+}
+
+#main{
+	background-color: #AB5A1B;
+	width:100vw;
+	height:60vw;
+}
+
+#whoAreWe{
+	width: 50vw;
+	height:60vw;
+	background-color: white;
+	margin:5vw;
+	color: #AB5A1B;
+	padding:3vw;
+}
+
+h1{
+	color: blue;
+
+}
+
+header{
+
+background-color: lightgrey;
+height: 10vw ;
+width: 100vw;
+
+}
+
+footer{
+
+	text-align: center;
+	background-color: orange;
+	height: 15vw;
+	width: 100vw;
+	font-size: 1.5em;
+}
+
+p{
+
+	text-align: center;
+	height: 15vw;
+	width: 100vw;
+	font-size: 1.5em;
+}
+
+.Fiend {
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+	height: 15vw;
+	width: 100vw;
+	font-size: 1.5em;
+}
+
+
+.Cut {
+  background-color: red;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+	height: 15vw;
+	width: 100vw;
+	font-size: 1.5em;
+}
+
+
+.Highest {
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+	height: 15vw;
+	width: 100vw;
+	font-size: 1.5em;
+}
+
+
+.Man {
+  background-color: red;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+	height: 15vw;
+	width: 100vw;
+	font-size: 1.5em;
+}
+
+
+
+
+p:hover, h1:hover, a:hover {
+  background-color: lightpink;
+}
+
+.css-selector {
+font-family: 'Merriweather', serif;
+font-size: 200px;
+}
+
+.css-selector {
+font-family: 'Modak', cursive;
+font-size: 200px;
+}
