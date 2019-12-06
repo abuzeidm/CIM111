@@ -1,0 +1,222 @@
+/* page layout */
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    background-color:#bababa;
+    color:#fff;
+    font:14px/1.3 Arial,sans-serif;
+}
+footer {
+    background-color:#212121;
+    bottom:0;
+    box-shadow: 0 -1px 2px #111111;
+    -moz-box-shadow: 0 -1px 2px #111111;
+    -webkit-box-shadow: 0 -1px 2px #111111;
+    display:block;
+    height:70px;
+    left:0;
+    position:fixed;
+    width:100%;
+    z-index:100;
+}
+footer h2{
+    font-size:22px;
+    font-weight:normal;
+    left:50%;
+    margin-left:-400px;
+    padding:22px 0;
+    position:absolute;
+    width:540px;
+}
+footer a.stuts,a.stuts:visited{
+    border:none;
+    text-decoration:none;
+    color:#fcfcfc;
+    font-size:14px;
+    left:50%;
+    line-height:31px;
+    margin:23px 0 0 110px;
+    position:absolute;
+    top:0;
+}
+footer .stuts span {
+    font-size:22px;
+    font-weight:bold;
+    margin-left:5px;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #696969;
+  color: white;
+  font-size: 30px;
+}
+
+.container {
+    background:#ddd;
+    color:#000;
+    margin:20px auto 100px;
+    padding:20px;
+    position:relative;
+    width:700px;
+
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+
+    box-shadow:1px 1px 5px #111;
+    -moz-box-shadow:1px 1px 5px #111;
+    -webkit-box-shadow:1px 1px 5px #111;
+}
+.container h2 {
+    margin-bottom:20px;
+    text-align:center;
+}
+
+/* css3 photo gallery styles */
+.gallery {
+    width:610px;
+    margin:10px auto;
+    position:relative;
+}
+.gallery a {
+    display:block;
+    height:100px;
+    position:relative;
+    width:133px;
+}
+.gallery a img {
+    border:5px solid #fff;
+    cursor:pointer;
+    display:block;
+    height:100%;
+    left:0px;
+    position:absolute;
+    top:0px;
+    width:100%;
+    z-index:1;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -webkit-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -moz-transition-duration:0.5s;
+    -o-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -o-transition-duration:0.5s;
+    transition-property:width, height, top, bottom, left, right, z-index, border;
+    transition-duration:0.5s;
+}
+.gallery a:focus img {
+    border:15px solid #fff;
+    cursor:default;
+    height:250%;
+    position:absolute;
+    width:250%;
+    z-index:25;
+    top:0px;
+    right:0px;
+
+    box-shadow:1px 1px 5px #888;
+    -moz-box-shadow:1px 1px 5px #888;
+    -webkit-box-shadow:1px 1px 5px #888;
+    -webkit-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -moz-transition-duration:0.5s;
+    -o-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -o-transition-duration:0.5s;
+    transition-property:width, height, top, bottom, left, right, z-index, border;
+    transition-duration:0.5s;
+}
+
+/* custom focus rules */
+.gallery a:focus:nth-child(1) img {
+    top:0px;
+}
+.gallery a:focus:nth-child(2) img {
+    top:-100px;
+}
+.gallery a:focus:nth-child(3) img {
+    top:-200px;
+}
+.gallery a:focus:nth-child(4) img {
+    top:-300px;
+}
+.gallery a:focus:nth-child(5) img {
+    top:-300px;
+}
+.gallery a:focus:nth-child(6) img {
+    top:-300px;
+}
+
+/* extra close layer */
+.gallery .close {
+    background:transparent;
+    cursor:pointer;
+    display:none;
+    height:270px;
+    left:0px;
+    position:absolute;
+    top:0px;
+    width:300px;
+    z-index:30;
+}
+.gallery a:focus ~ .close {
+    display:block;
+}
+
+/* articles */
+.articles {
+    overflow:hidden;
+}
+.articles > div {
+    border:1px solid #444;
+    float:left;
+    margin:0 1% 10px;
+    width:48%;
+
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+
+    box-shadow: 0 1px 2px #111111;
+    -moz-box-shadow: 0 1px 2px #111111;
+    -webkit-box-shadow: 0 1px 2px #111111;
+
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.articles div img {
+    cursor:pointer;
+    float:left;
+    margin-right:20px;
+    width:128px;
+}
+.articles div div {
+    float:left;
+    margin-top:8px;
+    width:128px;
+}
+.articles div div p:nth-child(1) {
+    color:#444;
+    font-size:12px;
+}
+.articles div div p:nth-child(2) {
+    font-size:17px;
+    font-weight:bold;
+}
+.articles div.sim div p:nth-child(2) {
+    cursor:pointer;
+}

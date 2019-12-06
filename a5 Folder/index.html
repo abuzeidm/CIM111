@@ -1,15 +1,43 @@
 <!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <title>Javascript/JQuery</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
 
-   <html>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body> 
+    <header>
+        <div class="header">
+<h2 id="id1">Personal Photo Portfolio</h2>
 
-     <head>
+<button type="button" 
+onclick="document.getElementById('id1').style.color = 'blue'">
+Change To Blue</button>
 
-          <title>Assignment (Put specific assignment number here without parenthesis): </title>  
+        <h2 id="demo" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">What's Your Creative Age</h2>
 
-     </head>
+<input id="age" value="18" />
 
-     <body>
+<button onclick="myFunction()">Try it</button>
+      </div>
+</header>
 
-     </body>
+<h2 id="demo"></h2>
+        <div class="container" id="container">
+            <h2> Photo Portfolio</h2>
+            <div class="gallery" id="gallery"></div>
+            <hr />
+            <h2>Photo Details</h2>
+            <div class="articles" id="articles"></div>
+        </div>
+        <footer>
+            <h2>Personal Portfolio</h2>
+            <a href="http://www.instagram.com/abuzeid.m.f" class="stuts"> <span>Instagram</span></a>
+        </footer>
 
-  </html>
+</body>
+</html>
